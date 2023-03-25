@@ -1,0 +1,15 @@
+.fondo{
+    
+    background-color: rgb(7, 91, 218);
+
+    color:white;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.fondo:hover{
+    background-color: #1b6eebc0;
+    color: rgb(68, 68, 68);
+    transform: scale(1.05);
+    cursor: pointer;
+}

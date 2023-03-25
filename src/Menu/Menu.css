@@ -1,0 +1,15 @@
+.menu{
+    
+    background-color: rgb(7, 91, 218);
+
+}
+
+.li_navbar{
+    color: #bdbdbddc;
+    transition: .2s;
+}
+
+.li_navbar:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}

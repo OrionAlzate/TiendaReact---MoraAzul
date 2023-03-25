@@ -1,0 +1,22 @@
+.banner{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/tiendamoraazul-fba5e.appspot.com/o/banner-moraazul.jpg?alt=media&token=bff27859-7b05-42b9-882a-30bec9c65b4a");
+    background-position: top center;
+    background-size: cover;
+    padding: 22%;
+    position: relative;
+    z-index: 1;
+    color:white;
+    background-attachment:fixed;
+}
+
+.banner::after{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    top:0;
+    left:0;
+    opacity: 0.5;
+    z-index: -1;
+}
