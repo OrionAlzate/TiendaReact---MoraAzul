@@ -1,13 +1,14 @@
+import './Administrador.css'
 export function Administrador() {
     return (
         <>
             <br></br>
             <div class="container-fluid my-5">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-6">
                         <img src="https://firebasestorage.googleapis.com/v0/b/tiendamoraazul-fba5e.appspot.com/o/artesanias.jpg?alt=media&token=8c104d32-be7e-436d-a067-684032cce024" alt="foto" class="img-fluid" />
                     </div>
-                    <div class="col-4">
+                    <div class="col-6">
                         <h2 class="text-center mb-4">Registro de mercancia</h2>
                         <form>
                             <div class="row">
@@ -143,7 +144,10 @@ export function Administrador() {
                                     </div>
                                 </div>
                             </div>
-                            
+                            <div class="div_btn_enviar text-center ">
+                                <button id='btn_enviar' type="button" class="btn btn-outline-primary ">Enviar...</button>
+                            </div>
+
                         </form>
                     </div>
 

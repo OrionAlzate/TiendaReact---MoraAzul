@@ -1,0 +1,16 @@
+.div_btn_enviar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#btn_enviar{
+    width: 350px ;
+    height: 50px ;
+    font-size: 25px ;
+    transition: .2s ;
+    flex-grow: 1;
+}
