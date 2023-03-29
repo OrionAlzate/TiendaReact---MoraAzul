@@ -1,7 +1,6 @@
 .fondo{
-    
+    margin-bottom: 20px;
     background-color: rgb(7, 91, 218);
-
     color:white;
     border-radius: 5px;
     transition: .3s;
@@ -12,4 +11,17 @@
     color: rgb(68, 68, 68);
     transform: scale(1.05);
     cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .fondo{
+        width: 70%;
+    }
+}
+.titulo_servicios{
+    padding: 20px;
+}
+.texto_servicios{
+    padding: 20px;
+    text-align: justify;
 }
