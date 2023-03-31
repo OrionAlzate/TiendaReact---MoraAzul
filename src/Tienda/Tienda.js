@@ -68,6 +68,9 @@ export function Tienda() {
 
     return (
         <>
+            <br></br>
+            <br></br>
+            <br></br>
             <div class="row row-cols-1 row-cols-lg-5 row-cols-md-5 g-3 my-5 producto_container">
                 {
                     productos.map(function(producto){
