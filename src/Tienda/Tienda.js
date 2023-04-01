@@ -1,10 +1,16 @@
 import './Tienda.css'
+import { Link } from "react-router-dom"
+
 export function Tienda() {
 
-    function cambiarFoto(evento){
-        console.log(evento.preventDefault);
+    function cambiarFoto(evento) {
+        evento.preventDefault()
+        evento.target.classList.remove("sombra")
     }
-
+    function cambiarFoto2(evento) {
+        evento.preventDefault()
+        evento.target.classList.add("sombra")
+    }
 
     let productos = [
         {
@@ -69,32 +75,40 @@ export function Tienda() {
         }
     ]
 
-
-
     return (
         <>
             <br></br>
             <br></br>
             <br></br>
-            <div class="row row-cols-1 row-cols-lg-5 row-cols-md-5 g-3 my-5 producto_container ">
-                {
-                    productos.map(function (producto) {
-                        return (
-                            <div class="col ">
-                                <div class="card h-100 shadow div_productos d-flex flex-wrap justify-content-center">
-                                    <img src={producto.foto} alt="Producto" class="img-fluid img_producto sombra" onMouseOver={cambiarFoto}  />
-                                    <h2>{producto.nombre}</h2>
-                                    <p class="descripcion_producto">{producto.descripcion}</p>
-                                    <h5 class="precio_producto">${producto.precio} COP</h5>
+
+            <div class="w-100 container">
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-3 m-5 producto_container ">
+                    {
+                        productos.map(function (producto) {
+                            return (
+                                <div class="col zoom ">
+                                    <Link class="link_prod" to="/compras">
+                                    <div class="card h-100 shadow div_productos d-flex flex-wrap justify-content-center">
+                                        <img
+                                            src={producto.foto}
+                                            alt="Producto"
+                                            class="img-fluid img_producto sombra"
+                                            onMouseOver={cambiarFoto}
+                                            onMouseLeave={cambiarFoto2}
+                                        // onClick={}
+                                        />
+                                        
+                                            <h2>{producto.nombre}</h2>
+                                        <p class="descripcion_producto">{producto.descripcion}</p>
+                                        <h5 class="precio_producto">${producto.precio} COP</h5>
+                                    </div>
+                                    </Link>
                                 </div>
-                            </div>
-                        )
-                    })
-                }
+                            )
+                        })
+                    }
+                </div>
             </div>
-
-
-
         </>
     )
 }
