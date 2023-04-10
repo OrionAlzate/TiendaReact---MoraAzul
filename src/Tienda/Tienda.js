@@ -82,7 +82,7 @@ export function Tienda() {
             <br></br>
 
             <div class="w-100 container">
-                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-3 m-5 producto_container ">
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-3 mt-5 producto_container ">
                     {
                         productos.map(function (producto) {
                             return (

@@ -7,7 +7,7 @@ export function Menu(){
             <nav class="navbar navbar-expand-lg navbar-dark menu fixed-top">
                 <div class="container-fluid">
                 <Link class="navbar-brand li_navbar" to="/">
-                    <img class="img_logo" src='https://img.freepik.com/vector-premium/plantilla-diseno-logotipo-artesania-simple-hecha-mano_76712-507.jpg'></img>
+                    <img class="img_logo" src='https://firebasestorage.googleapis.com/v0/b/tiendamoraazul-fba5e.appspot.com/o/logo%20mono.png?alt=media&token=9f128e32-eed7-4934-98a4-074aa70ebb29'></img>
                 </Link>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

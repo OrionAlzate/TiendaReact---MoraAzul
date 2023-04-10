@@ -1,18 +1,19 @@
 import './Home.css'
-import {Menu} from '../Menu/Menu'
 import { AcercaDe } from '../AcercaDe/AcercaDe'
 import { Servicios } from '../Servicios/Servicios'
+import { Features } from '../Features/Features'
 
 export function Pepe(){
     return(
         <>
             <section>
                 <div class="banner">
-                    <h1>Tienda Mora Azul...</h1>
+                 
                 </div>
             </section>
             <AcercaDe></AcercaDe>
             <Servicios></Servicios>
+            <Features></Features>
         </>
     )
 }

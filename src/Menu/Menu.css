@@ -1,7 +1,8 @@
 .menu{
     
-    background-color: rgb(7, 91, 218);
-
+    background-color: rgb(32, 42, 44);
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
 }
 
 .li_navbar{
@@ -15,4 +16,6 @@
 }
 .img_logo{
     height: 80px;
+    width: 80px;
+    border-radius: 50%;
 }

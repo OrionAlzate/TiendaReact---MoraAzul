@@ -3,7 +3,9 @@ export function Administrador() {
     return (
         <>
             <br></br>
-            <div class="container-fluid my-5">
+            <br></br>
+            <br></br>
+            <div class="container-fluid mt-5">
                 <div class="row">
                     <div class="col-6">
                         <img src="https://firebasestorage.googleapis.com/v0/b/tiendamoraazul-fba5e.appspot.com/o/artesanias.jpg?alt=media&token=8c104d32-be7e-436d-a067-684032cce024" alt="foto" class="img-fluid" />

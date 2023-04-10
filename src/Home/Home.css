@@ -1,15 +1,18 @@
 .banner{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/tiendamoraazul-fba5e.appspot.com/o/banner-moraazul.jpg?alt=media&token=bff27859-7b05-42b9-882a-30bec9c65b4a");
-    background-position: top center;
+    margin-top: 105px;
+    text-align: center;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/tiendamoraazul-fba5e.appspot.com/o/banner%20hero%201.png?alt=media&token=daed073a-32b7-4115-917f-168a91b06e3a");
+    background-position: center;
     background-size: cover;
     padding: 22%;
-    position: relative;
-    z-index: 1;
+    /* position: relative; */
+    /* z-index: 1; */
     color:white;
-    background-attachment:fixed;
+    /* background-attachment:fixed; */
+    height: 80vh;
 }
 
-.banner::after{
+/* .banner::after{
     content:'';
     position: absolute;
     height: 100%;
@@ -17,6 +20,6 @@
     background-color: black;
     top:0;
     left:0;
-    opacity: 0.5;
+    opacity: 0.01;
     z-index: -1;
-}
+} */

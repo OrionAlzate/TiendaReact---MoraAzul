@@ -6,6 +6,7 @@ import { Tienda } from "../Tienda/Tienda"
 import { ApliarInfo } from "../AmpliarInfo/AmpliarInfo"
 
 
+
 export function Router() {
 
   return (

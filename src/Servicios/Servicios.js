@@ -7,7 +7,7 @@ export function Servicios() {
                 <div class="row text-center justify-content-around">
                     <div class="col-12 col-md-3 fondo">
 
-                        <h2 class="titulo_servicios">Compra desde nuestro sitio</h2>
+                        <h2 class="titulo_servicios">Compra desde nuestro sitio web</h2>
                         <i class="bi bi-cash-coin fs-1"></i>
                         <p class="texto_servicios">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat tempore nesciunt dignissimos sunt quasi, fugit, consequuntur asperiores suscipit, optio aliquam perferendis in laboriosam sint beatae architecto aspernatur fugiat! Harum, magnam.
