@@ -1,4 +1,4 @@
-.div_btn_enviar{
+.div_btn_enviar {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -7,10 +7,20 @@
     text-align: center;
 }
 
-#btn_enviar{
-    width: 350px ;
-    height: 50px ;
-    font-size: 25px ;
-    transition: .2s ;
+#btn_enviar {
+    width: 350px;
+    height: 50px;
+    font-size: 25px;
+    transition: .2s;
     flex-grow: 1;
+}
+
+.img_container_admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_admin {
+    
 }
