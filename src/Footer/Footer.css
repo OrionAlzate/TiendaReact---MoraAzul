@@ -91,12 +91,16 @@ ul{
 .lista_footer{
     text-decoration: none;
     color: white;
+    /* padding: 5px ; */
+    /* border-radius: 5px; */
+
 }
 
 .lista_footer:hover {
     cursor: pointer;
     color: #90d0e0;
     font-weight: bold;
+    /* background-color: #ffffff3d; */
 }
 
 @media screen and (max-width:768px) {
