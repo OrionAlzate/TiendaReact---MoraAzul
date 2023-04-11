@@ -1,7 +1,8 @@
 .footer {
     width: 100%;
     height: fit-content;
-    background-color: #202c28;
+    background-color: rgb(32, 42, 44);
+
     color: white;
     font-family: 'Playfair Display SC', serif;
     text-align: center;
@@ -45,6 +46,7 @@
     font-size: 1.6em;
 }
 
+
 .redes_icons>i:hover {
     cursor: pointer;
     color: #90d0e0;
@@ -69,14 +71,32 @@
     align-self: flex-start;
 }
 
-.map_footer_container>p:hover {
-    cursor: pointer;
-    color: #90d0e0;
-    font-weight: bold;
-}
 
 .map_footer_container {
     text-align: start;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.list_item_footer{
+
+    list-style-type: none;
+    padding: 5px;
+}
+
+
+.lista_footer{
+    text-decoration: none;
+    color: white;
+}
+
+.lista_footer:hover {
+    cursor: pointer;
+    color: #90d0e0;
+    font-weight: bold;
 }
 
 @media screen and (max-width:768px) {
