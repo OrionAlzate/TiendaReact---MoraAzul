@@ -4,6 +4,8 @@ import { Administrador } from "../Administrador/Administrador"
 import { Menu } from "../Menu/Menu"
 import { Tienda } from "../Tienda/Tienda"
 import { ApliarInfo } from "../AmpliarInfo/AmpliarInfo"
+import { Footer } from '../Footer/Footer'
+
 
 
 
@@ -21,6 +23,9 @@ export function Router() {
         <Route path="/productos" element={<Tienda/>}/>
         <Route path="/compras" element={<ApliarInfo/>} />
       </Routes>
+      <br/>
+      <br/>
+      <Footer/>
 
     </>
 
