@@ -1,10 +1,16 @@
+import { Profiler } from 'react';
 import './AmpliarInfo.css'
 // import {Tienda} from '../Tienda/Tienda.js'
-
+import { useLocation } from 'react-router-dom'
 
 
 
 export function ApliarInfo() {
+
+
+    let location = useLocation();
+    let producto = location.state.producto;
+    console.log(producto)
 
     return (
         <>
@@ -13,17 +19,21 @@ export function ApliarInfo() {
             <br></br>
             <br></br>
             <br></br>
-            <div class="container">
+            <div class="container-sm">
                 <div class="row">
-                    <div class="col-12 col-md-7">
+                    <div class="col-12 col-md-6">
                         <img
-                            src="https://i.pinimg.com/736x/6e/e9/a3/6ee9a3781fcf6e91f3c760cf537646bc.jpg"
+                            src={producto.foto}
                             class="w-100 img-fluid"
                             alt="fotoEjemplo"
                         />
+                        <br/>
+                        <br/>
+                        <h5>Descripción del producto:</h5>
+                        <p>{producto.descripcion}</p>
                     </div>
-                    <div class="col-12 col-md-5 border p-3 rounded shadow ">
-                        <h2 class="fw-bold">Pulseras</h2>
+                    <div class="col-12 col-md-6 border p-3 rounded shadow ">
+                        <h2 class="fw-bold">{producto.nombre}</h2>
                         <i class="bi bi-star-fill text-warning fs-1 ms-1"></i>
                         <i class="bi bi-star-fill text-warning fs-1 ms-1"></i>
                         <i class="bi bi-star-fill text-warning fs-1 ms-1"></i>
@@ -33,7 +43,7 @@ export function ApliarInfo() {
                         <span class="badge text-bg-warning mt-3">Más vendido</span>
                         <br></br>
                         <br></br>
-                        <h3>$8000</h3>
+                        <h3>${producto.precio}</h3>
                         <span class="badge text-bg-primary mt-3">Ofertón del día</span>
 
                         <div class="">

@@ -1,5 +1,6 @@
 import './Tienda.css'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+// import { useNavigate } from 'react-router-dom'
 
 export function Tienda() {
 
@@ -11,6 +12,15 @@ export function Tienda() {
         evento.preventDefault()
         evento.target.classList.add("sombra")
     }
+   
+    let navegador = useNavigate();
+    function pasarInfo(producto){
+        navegador('/compras',{
+            state:{producto}
+        });
+    }
+
+
 
     let productos = [
         {
@@ -86,7 +96,7 @@ export function Tienda() {
                     {
                         productos.map(function (producto) {
                             return (
-                                <div class="col zoom ">
+                                <div class="col zoom " onClick={function(){ pasarInfo(producto)}}>
                                     <Link class="link_prod" to="/compras">
                                     <div class="card h-100 shadow div_productos d-flex flex-wrap justify-content-center">
                                         <img
