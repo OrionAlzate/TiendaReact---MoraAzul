@@ -1,5 +1,8 @@
 import './Administrador.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { registrarProductoEnBD } from '../Services/agregarProducto'
+
+
 export function Administrador() {
 
     const [nombre, setNombre] = useState("")
@@ -22,22 +25,27 @@ export function Administrador() {
 
         let datosProducto = {
             "nombre": nombre,
-            "foto": foto,
-            "descripcion": descripcion,
-            "cantidad": cantidad,
-            "precio": precio,
-            "clasificacion": clasificacion,
-            "marca": marca,
-            "proveedor": proveedor,
-            "presentacion": presentacion,
-            "peso": peso,
-            "descuento": descuento,
-            "volumen": volumen,
-            "fecha_ingreso": fecha_ingreso,
-            "fecha_exp": fecha_exp
+            // "foto": foto,
+            // "descripcion": descripcion,
+            "cantidad": cantidad
+            // "precio": precio,
+            // "clasificacion": clasificacion,
+            // "marca": marca,
+            // "proveedor": proveedor,
+            // "presentacion": presentacion,
+            // "peso": peso,
+            // "descuento": descuento,
+            // "volumen": volumen,
+            // "fecha_ingreso": fecha_ingreso,
+            // "fecha_exp": fecha_exp
         }
         console.log(datosProducto)
+        registrarProductoEnBD(datosProducto).then(function(respuesta){
+            console.log(respuesta)
+        })
     }
+
+
 
     return (
         <>
@@ -45,7 +53,7 @@ export function Administrador() {
             <br></br>
             <br></br>
             <div class="container-fluid mt-5">
-                <div class="row">
+                <div class="row ">
                     <div class="col-12 col-lg-5 col-md-5 img_container_admin">
                         <img src="https://firebasestorage.googleapis.com/v0/b/tiendamoraazul-fba5e.appspot.com/o/logo%20bw.png?alt=media&token=587eb131-e06a-4b86-81cf-5d0762dea3b1" alt="foto" class="img-fluid img_admin" />
                     </div>
