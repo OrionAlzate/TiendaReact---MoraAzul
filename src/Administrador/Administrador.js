@@ -25,10 +25,10 @@ export function Administrador() {
 
         let datosProducto = {
             "nombre": nombre,
-            // "foto": foto,
+            "foto": foto,
             // "descripcion": descripcion,
-            "cantidad": cantidad
-            // "precio": precio,
+            "cantidad": cantidad,
+            "precio": precio
             // "clasificacion": clasificacion,
             // "marca": marca,
             // "proveedor": proveedor,
