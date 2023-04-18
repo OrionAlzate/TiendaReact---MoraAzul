@@ -1,6 +1,6 @@
 import './Administrador.css'
 import { useState, useEffect } from 'react'
-import { registrarProductoEnBD } from '../Services/agregarProducto'
+import { registrarProductoEnBD } from '../services/agregarProducto'
 
 
 export function Administrador() {

@@ -1,7 +1,7 @@
 import "./Tienda.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { consultarProductos } from "../Services/buscarProductos";
+import { consultarProductos } from "../services/buscarProductos";
 
 export function Tienda() {
   const [productosTienda, setProductosTienda] = useState("");
