@@ -1,6 +1,7 @@
 import './Administrador.css'
 import { useState, useEffect } from 'react'
 import { registrarProductoEnBD } from '../services/agregarProducto'
+import Swal from 'sweetalert2'
 
 
 export function Administrador() {
@@ -40,9 +41,23 @@ export function Administrador() {
             // "fecha_exp": fecha_exp
         }
         console.log(datosProducto)
-        registrarProductoEnBD(datosProducto).then(function(respuesta){
-            console.log(respuesta)
-        })
+        registrarProductoEnBD(datosProducto).then(function (respuesta) {
+            Swal.fire(
+                'Good job!',
+                'You clicked the button!',
+                'success'
+            )
+
+        }).catch(
+            function (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Algo salió mal!',
+                })
+            }
+
+        )
     }
 
 
