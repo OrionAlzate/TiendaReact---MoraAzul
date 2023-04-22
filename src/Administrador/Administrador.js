@@ -5,7 +5,6 @@ import Swal from 'sweetalert2'
 
 
 export function Administrador() {
-
     const [nombre, setNombre] = useState("")
     const [foto, setFoto] = useState("")
     const [descripcion, setDecripcion] = useState("")
@@ -20,6 +19,7 @@ export function Administrador() {
     const [volumen, setVolumen] = useState("")
     const [fecha_ingreso, setFecha_ingreso] = useState("")
     const [fecha_exp, setFecha_exp] = useState("")
+
 
     function procesarFormulario(evento) {
         evento.preventDefault()
@@ -43,22 +43,20 @@ export function Administrador() {
         console.log(datosProducto)
         registrarProductoEnBD(datosProducto).then(function (respuesta) {
             Swal.fire(
-                'Good job!',
-                'You clicked the button!',
-                'success'
-            )
+                'Producto guardado con exito!',
 
+            )
         }).catch(
             function (error) {
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: 'Algo salió mal!',
+                    text: 'Algo salió mal!' 
                 })
             }
-
         )
     }
+
 
 
 
@@ -324,7 +322,9 @@ export function Administrador() {
                                 <button
                                     id='btn_enviar'
                                     type="submit"
-                                    class="btn btn-outline-primary ">Enviar...</button>
+                                    class="btn btn-outline-primary ">Enviar...
+                                </button>
+                              
                             </div>
 
                         </form>
@@ -334,4 +334,5 @@ export function Administrador() {
             </div>
         </>
     )
+
 }

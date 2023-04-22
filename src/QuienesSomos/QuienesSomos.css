@@ -1,0 +1,45 @@
+.contenedor_quienesSomos{
+    width: 60%;
+    margin: auto;
+    height: fit-content;
+    /* background-color: blue; */
+    text-align: center;
+}
+.titulo_Quienes{
+    margin: auto;
+}
+.img_estefa{
+    width: 250px;
+    transform: scale(1.2);
+}
+
+.img_orion{
+    width: 250px;
+    transform: scale(.82);
+
+}
+
+.img_estefa, .img_orion{
+    margin: 30px;
+}
+
+.github_estefa, .github_orion{
+    margin: 0 10px ;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+.github_estefa:hover, .github_orion:hover{
+    margin: 0 10px ;
+    text-decoration: none;
+    color: rgb(43, 7, 245);
+}
+
+.github_estefa_i, .github_orion_i{
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* .contenedor_github{
+
+} */

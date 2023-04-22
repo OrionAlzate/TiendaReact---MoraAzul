@@ -23,6 +23,9 @@ export function Menu(){
                     <li class="nav-item ">
                         <Link class="nav-link li_navbar" to="/productos">Productos</Link>
                     </li>
+                    <li class="nav-item ">
+                        <Link class="nav-link li_navbar" to="/quienessomos">Quienes Somos</Link>
+                    </li>
                 </ul>
                 </div>
                 </div>

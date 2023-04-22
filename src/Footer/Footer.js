@@ -19,6 +19,9 @@ export function Footer() {
                             <li class="list_item_footer">
                                 <Link class="lista_footer" to="/productos">Productos</Link>
                             </li>
+                            <li class="list_item_footer">
+                                <Link class="lista_footer" to="/quienessomos">Quienes Somos</Link>
+                            </li>
                         </ul>
                     </div>
 
